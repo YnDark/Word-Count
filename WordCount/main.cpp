@@ -18,6 +18,7 @@ int main() {
     int charnum = 0;
     int wordnum = 0;
     int inword = 0;
+    char prech = 0; // 用于记录前一个字符
     char ch;
 
     while ((ch = fgetc(file)) != EOF) {
@@ -25,13 +26,22 @@ int main() {
 
         // 检查当前字符是否是空格或逗号
         if (ch == ' ' || ch == ',') {
-            wordnum++;
+            if (inword) {
+                inword = 0;
+                wordnum++;
+            }
         }
-
+        else if (prech == 0 || prech == ' ' || prech == ',') {
+            // 如果当前字符不是空格或逗号，并且前一个字符是空格或逗号或者没有前一个字符（即prech == 0）
+            inword = 1;
+        }
+        prech = ch; // 更新前一个字符
     }
 
     // 如果文件以单词结尾，增加单词计数
-    wordnum++;
+    if (inword) {
+        wordnum++;
+    }
 
     fclose(file);
 

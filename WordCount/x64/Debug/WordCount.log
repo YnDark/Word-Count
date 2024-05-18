@@ -1,23 +1,10 @@
 ﻿  main.cpp
-C:\Users\杨定鑫\source\repos\WordCount\WordCount\main.cpp(9,13): warning C4477: “scanf_s”: 格式字符串“%s”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“char *”
-  C:\Users\杨定鑫\source\repos\WordCount\WordCount\main.cpp(9,13):
+C:\Users\杨定鑫\source\repos\WordCount\WordCount\main.cpp(11,13): warning C4477: “scanf_s”: 格式字符串“%s”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“size_t”
+  C:\Users\杨定鑫\source\repos\WordCount\WordCount\main.cpp(11,13):
   此参数用作缓冲区大小
   
-C:\Users\杨定鑫\source\repos\WordCount\WordCount\main.cpp(9,13): warning C4473: “scanf_s”: 没有为格式字符串传递足够的参数
-  C:\Users\杨定鑫\source\repos\WordCount\WordCount\main.cpp(9,13):
-  占位符和其参数预计 4 可变参数，但提供的却是 2 参数
-  C:\Users\杨定鑫\source\repos\WordCount\WordCount\main.cpp(9,13):
-  缺失的可变参数 3 为格式字符串“%s”所需
-  C:\Users\杨定鑫\source\repos\WordCount\WordCount\main.cpp(9,13):
-  此参数由转换说明符使用
+C:\Users\杨定鑫\source\repos\WordCount\WordCount\main.cpp(12,13): warning C4477: “scanf_s”: 格式字符串“%s”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“size_t”
+  C:\Users\杨定鑫\source\repos\WordCount\WordCount\main.cpp(12,13):
+  此参数用作缓冲区大小
   
-C:\Users\杨定鑫\source\repos\WordCount\WordCount\main.cpp(11,18): error C2660: “fopen_s”: 函数不接受 2 个参数
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\stdio.h(102,34):
-  参见“fopen_s”的声明
-  C:\Users\杨定鑫\source\repos\WordCount\WordCount\main.cpp(11,18):
-  尝试匹配参数列表“(char [100], const char [2])”时
-  
-C:\Users\杨定鑫\source\repos\WordCount\WordCount\main.cpp(11,16): error C2440: “初始化”: 无法从“errno_t”转换为“FILE *”
-  C:\Users\杨定鑫\source\repos\WordCount\WordCount\main.cpp(11,16):
-  从整型类型转换为指针类型需要 reinterpret_cast、C 样式转换或带圆括号的函数样式强制转换
-  
+  WordCount.vcxproj -> C:\Users\杨定鑫\source\repos\WordCount\x64\Debug\WordCount.exe

@@ -7,7 +7,7 @@ int main() {
     FILE* file;
     errno_t err;
 
-    printf("请输入参数（-c 或 -w）和文件名：");
+    printf("请输入参数（-c 或 -w）和文件路径：");
     scanf_s("%s", parameter, sizeof(parameter));
     scanf_s("%s", filename, sizeof(filename));
     if ((err = fopen_s(&file, filename, "r"))!=0) {
